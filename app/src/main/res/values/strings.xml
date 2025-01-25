@@ -13,4 +13,6 @@
     <string name="media_valor">"Média: "</string>
     <string name="media_deve_ser_um_numero_inteiro">Média deve ser um número ínteiro</string>
     <string name="media_deve_ser_entre_0_e_100">Média deve ser entre 0 e 100!</string>
+    <string name="possui_bolsa">Possui bolsa</string>
+    <string name="nao_possui_bolsa">Não possui bolsa!</string>
 </resources>

@@ -4,6 +4,7 @@ package br.com.movingtechbrasil.aula1;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PessoaActivity extends AppCompatActivity {
 
     private EditText editTextNome, editTextMedia;
+    private CheckBox checkBoxBolsista;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +25,7 @@ public class PessoaActivity extends AppCompatActivity {
 
         editTextNome = findViewById(R.id.editTextNome);
         editTextMedia = findViewById(R.id.editTextMedia);
+        checkBoxBolsista = findViewById(R.id.checkBoxBolsista);
 
     }
 
@@ -29,6 +33,7 @@ public class PessoaActivity extends AppCompatActivity {
 
         editTextNome.setText(null);
         editTextMedia.setText(null);
+        checkBoxBolsista.setChecked(false);
         editTextNome.requestFocus();
         Toast.makeText(this,
                 R.string.as_entradas_foram_apagadas,
@@ -81,9 +86,13 @@ public class PessoaActivity extends AppCompatActivity {
             return;
         }
 
+        boolean bolsista = checkBoxBolsista.isChecked();
+
         Toast.makeText(this,
-                getString(R.string.nome_valor)+nome + "\n"+
-                getString(R.string.media_valor)+ media, Toast.LENGTH_LONG).show();
+                    getString(R.string.nome_valor)+ nome + "\n"+
+                        getString(R.string.media_valor)+ media +" "+
+                        (bolsista ? getString(R.string.possui_bolsa) : getString(R.string.nao_possui_bolsa)),
+                Toast.LENGTH_LONG).show();
     }
 
     private void campoInteiroEmEvidencia(@NonNull EditText campo){
