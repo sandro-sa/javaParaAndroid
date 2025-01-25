@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Aula1</string>
+    <string name="nome">Nome</string>
+    <string name="media">Média</string>
+    <string name="limpar">Limpar</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="media_final">Média final</string>
+    <string name="as_entradas_foram_apagadas">As entradas foram apagadas!</string>
+    <string name="digite_um_nome">Digíte um nome!</string>
+    <string name="digite_a_media">Digíte a média</string>
+    <string name="nome_valor">"Nome: "</string>
+    <string name="media_valor">"Média: "</string>
+    <string name="media_deve_ser_um_numero_inteiro">Média deve ser um número ínteiro</string>
+    <string name="media_deve_ser_entre_0_e_100">Média deve ser entre 0 e 100!</string>
+</resources>
